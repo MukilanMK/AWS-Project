@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+<h2>{% if post %}Edit{% else %}New{% endif %} Post</h2>
+<form method="post">
+  {{ form.hidden_tag() }}
+  <div class="mb-3">
+    {{ form.title.label }} {{ form.title(class_='form-control') }}
+  </div>
+  <div class="mb-3">
+    {{ form.body.label }} {{ form.body(class_='form-control tinymce') }}
+  </div>
+  <div class="mb-3">
+    {{ form.tags.label }} {{ form.tags(class_='form-control') }}
+  </div>
+  <div>{{ form.submit(class_='btn btn-success') }}</div>
+</form>
+{% endblock %}

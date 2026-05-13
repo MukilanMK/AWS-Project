@@ -1,0 +1,10 @@
+body {
+  background: #f8f9fa;
+}
+article h1,
+article h3 {
+  color: #0d6efd;
+}
+.container {
+  max-width: 960px;
+}
