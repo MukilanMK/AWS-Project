@@ -16,9 +16,7 @@ phases:
 
       - echo "Uploading encrypted artifact to S3"
 
-      - aws s3 cp app.zip s3://aws-project-577267184066/artifacts/app.zip \
-        --sse aws:kms \
-        --sse-kms-key-id arn:aws:kms:us-east-1:577267184066:key/785928ca-2c9e-4c79-933e-2318ae9c3ff4
+      - aws s3 cp app.zip s3://aws-project-577267184066/artifacts/app.zip --sse aws:kms --sse-kms-key-id arn:aws:kms:us-east-1:577267184066:key/785928ca-2c9e-4c79-933e-2318ae9c3ff4
 
 artifacts:
   files:
