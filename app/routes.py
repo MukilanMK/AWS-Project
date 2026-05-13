@@ -16,6 +16,11 @@ def index():
     return render_template("index.html", posts=posts, q=q)
 
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
 @app.route("/post/<int:post_id>")
 def post_detail(post_id):
     post = Post.query.get_or_404(post_id)

@@ -24,7 +24,9 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
             {% if current_user.is_authenticated %}
-              <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="/admin/post/new">New Post</a>
             </li>
